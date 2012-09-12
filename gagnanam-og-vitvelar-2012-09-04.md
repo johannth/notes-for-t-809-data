@@ -10,6 +10,8 @@ $$y(\x, \vec{w}) = \begin{cases}
     1, &\text{else}
 \end{cases}$$
 
+![](img/2012-09-04-1.jpg)
+
 # Linear Models of Regression
 
 We are given a data set with $N$ observations $\{ \x_n \}_{n=1}^N$ together with corresponding target values $\{ t_n \}_{n=1}^N$. The goal is to predict $t$ for a new value of $\x$. Regression mean that $t \in \R$.
@@ -43,8 +45,6 @@ We assume that the target values are reached by the model plus noise:
 $$t = y(\x, \w) + \epsilon$$
 Assume that
 $$p(\epsilon|\beta) = \NormalDist(\epsilon|0, \beta^{-1})$$
-
-HÉR KEMUR MYND 1
 
 This is equivalent to saying
 $$p(t, \x, \w, \beta) = \NormalDist(t | y(\x, \w), \beta^{-1})$$
