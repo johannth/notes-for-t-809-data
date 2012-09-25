@@ -14,13 +14,15 @@ $$y(\x, \vec{w}) = \begin{cases}
 
 # Linear Models of Regression
 
-We are given a data set with $N$ observations $\{ \x_n \}_{n=1}^N$ together with corresponding target values $\{ t_n \}_{n=1}^N$. The goal is to predict $t$ for a new value of $\x$. Regression mean that $t \in \R$.
+![](img/2012-09-04-1-1.jpg)
+
+We are given a data set with $N$ observations $\{ \x_n \}_{n=1}^N$ together with corresponding target values $\{ t_n \}_{n=1}^N$. The goal is to predict $t$ for a new value of $\x$. Regression means that $t \in \R$.
 
 The simplest linear model for regression is *also* linear (if we talk loosely about linerity and set $x_0 = 1$) in the input variables:
 $$y(\x, \vec{w}) = w_0 + w_1 * x_1 + w_2 * x_2 + \dotsb + w_D * x_D$$
 This is called **linear regression**. The key property is that this is also linear in the parameters $w_0, w_1, \dotsc, w_D$. Being linear in the input variable is very limiting. A more general model that is also tractable is only linear in parameters:
 \begin{align*}
-y(\x \vec{w}) &= w_0 + w_1 \Phi_1(\x) + w_2 \Phi_2(\x) + \dotsb + w_{m-1} \Phi_{m-1}(\x) \\
+y(\x, \vec{w}) &= w_0 + w_1 \Phi_1(\x) + w_2 \Phi_2(\x) + \dotsb + w_{m-1} \Phi_{m-1}(\x) \\
 &= \sum_{j=0}^{m-1} w_j \Phi_j(\x) = \vec{w}^T \vec{\Phi}(\x)
 \end{align*}
 where
@@ -29,7 +31,7 @@ $$\vec{w} = \begin{bmatrix}
     w_1 \\
     \vdots \\
     w_{m-1}
-\end{bmatrix} \text{and}
+\end{bmatrix} \: \text{and} \:
 \vec{\Phi}(\x) = \begin{bmatrix}
     \Phi_0(\x) \\
     \Phi_1(\x) \\
@@ -37,7 +39,7 @@ $$\vec{w} = \begin{bmatrix}
     \Phi_{m-1}(\x)
 \end{bmatrix}$$
 
-We call $\Phi_j(\x)$ are called **basis functions**, $\Phi_0(\x) = 1$ is a dummy basis function and $w_0$ is called a **bias parameter**. This is not a statistica bias but more of a method that allows to to shift the data.
+We call $\Phi_j(\x)$ are called **basis functions**, $\Phi_0(\x) = 1$ is a dummy basis function and $w_0$ is called a **bias parameter**. This is not a statistical bias but more of a method that allows to to shift the data.
 
 ## Maximum likelihood and least squares
 
@@ -88,6 +90,5 @@ $$\y = \Phi \w_{ML}=[\phi_1, \phi_2, \dotsc, \phi_M] \w_{ML} = \begin{bmatrix}
 
 So $\y$ is an $M$ dimensional subspace spanned by $\phi_1, \phi_2, \dotsc, \phi_M$, $\y \in S \subseteq T$, $t \in T$.
 
-MYND 2 Á AÐ KOMA HÉR.
-
-With arbitrary $\w$, $\y$ can be anywhere in $S$ but $\w_{ML}$ positions $\y$ to be as close to $\t$ as possible. I.e $\y$ is an othogonal projection of $\t$ onto $S$, the space spanned by the nonlinear transform of the input.
+![](img/2012-09-04-2.jpg)
+With arbitrary $\w$, $\y$ can be anywhere in $S$ but $\w_{ML}$ positions $\y$ to be as close to $\t$ as possible. I.e $\y$ is an orthogonal projection of $\t$ onto $S$, the space spanned by the nonlinear transform of the input.

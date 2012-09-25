@@ -45,4 +45,6 @@ We have the same properties as in the binary case plus the following properties
 1. Simply connected.
 2. Convex.
 
+![](img/2012-09-12-7.jpg)
+
 
