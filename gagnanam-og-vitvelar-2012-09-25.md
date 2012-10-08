@@ -4,7 +4,7 @@
 
 # Linear Classification
 
-<!-- ![](img/2012-09-25-1.jpg) -->
+![](img/2012-09-25-1.jpg)
 
 Linear equation
 $$y(\x) = \w^T \x + w_0$$
@@ -60,9 +60,9 @@ $$\tilde{W} = \underbrace{(\tilde{X}^T \tilde{X})^{-1} \tilde{X}^T}_{\tilde{X}^\
 * Don't take values between $(0, 1)$.
 * Lacks robustness to outliers and special class geometry
 
-<!-- ![LMS lacks robustness for outliers](img/2012-09-25-2.jpg) -->
+![LMS lacks robustness for outliers](img/2012-09-25-2.jpg)
 
-<!-- ![LMS lacks robustness for special class geometry](img/2012-09-25-3.jpg) -->
+![LMS lacks robustness for special class geometry](img/2012-09-25-3.jpg)
 
 It shouldn't be surprising that LMS corresponds to maximum likelihood assumptions of Gaussian conditional distribution $p(\t|\x)$ but since $\t$ takes binary values we know that the Gaussian assumption is pretty bad.
 

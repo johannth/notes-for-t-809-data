@@ -4,7 +4,7 @@
 
 Let's defina a "state-of-nature" $C$ (e.g. $C_1$ or $C_2$) which describes an event that has happened.
 
-For example, $C_1$ is when the tumur under inspection is malignant and $C_2$ is when it is benign.
+For example, $C_1$ is when the tumpur under inspection is malignant and $C_2$ is when it is benign.
 
 Because the state of nature is so unpredictable we consider $C$ to be a variable that bmust be described probabilistically.
 
@@ -20,7 +20,7 @@ Normally we include a measurement $\x_n$ to improve our classifier. Different ex
 
 If we let $x$ be the diameter of the tumor then the difference between $P(x|C_1)$ and $P(x|C_2)$ describes the difference in diameter between malignant and benign tumors.
 
-![Mynd 1]()
+<!-- ![Mynd 1]() -->
 
 How does the knowledge of the measurement $x$ influence our attitude with respect to state of nature?
 
@@ -43,12 +43,12 @@ Decide $C_1$ if $P(C_1|\x) > P(C_2|\x)$, otherwise decide $C_2$.
 We can justify this rule by looking at the probability of error. We know
 
 $$P(\epsilon|\x) = \begin{cases}
-    P(C_1|\x), &if we decide $C_2 \\
-    P(C_2|\x), &if we decide $C_1
+    P(C_1|\x), &\text{if we decide} C_2 \\
+    P(C_2|\x), &\text{if we decide} C_1
 \end{cases}$$
 
 $$P(\epsilon) = \int_{-\infty}^\infty P(\epsilon, x) dx = \int_{-\infty}^\infty p(\epsilon|x)p(x)dx$$
 
 $$P(\epsilon|x) = \int_{-\infty}{\infty} \min(P(C_1|x), P(C_2|x))dx$$
 
-![Mynd 2]()
+<!-- ![Mynd 2]() -->
