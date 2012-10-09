@@ -17,7 +17,7 @@ a_k(\x) &= \ln ( p(\x | C_k) p(C_k) ) \\
 &= - \frac{1}{2} (\x - \mvmean_k)^T \mvSigma_k^{-1} (\x -\mvmean_k) - \frac{D}{2} \ln (2 \pi) - \frac{1}{2} \ln \det{\mvSigma_k} + \ln (p(C_k))
 \end{align*}
 
-We can look at the following     3 cases:
+We can look at the following 3 cases:
 
 ### Case 1: $\mvSigma_k = \sigma^2 \I$
 
@@ -38,7 +38,7 @@ This is a hyperplane through $\x_0$ and orthogonal to $\w$.
 
 Such a classifier is called the *minimum distance classifier*. If the class means $\mvmean_k$ are interpreted as prototypes or templates for the class, this method is called *template matching*.
 
-### Case 2: $mvSigma_k = \mvSigma$
+### Case 2: $\mvSigma_k = \mvSigma$
 
 The samples fall into hyper-ellipsoidal clusters of equal size and shape. Then
 $$a_k(\x) = -\frac{1}{2}(\x - \mu_k)^T \mvSigma^{-1}(\x - \mu_k) + \ln(p(C_k))$$
