@@ -72,7 +72,7 @@ $$a = \ln \frac{p(\x|C_1) p(C_1)}{p(\x|C_2)p(C_2)}$$
 $$p(C_1|\x) = \frac{1}{1 - e^a} = \sigma(a)$$
 where $\sigma(a)$ is called the _logistic sigmoid_.
 
-The shape of $\sigma(a$ forces the result to be between $0$ and $1$.
+The shape of $\sigma(a)$ forces the result to be between $0$ and $1$.
 
 ![](img/2012-10-02-4.jpg)
 
@@ -106,13 +106,13 @@ Let's look at $3$ cases:
 
 ### Case 1: $\mvSigma_k = \sigma^2 \I$
 
-The samples fall into $K$ equally hypersperical clusters centered about $\mvmean_k$.
+The samples fall into $K$ equally hyperspherical clusters centered about $\mvmean_k$.
 
 ![](img/2012-10-02-5.jpg)
 
 The we get
 $$a_k(\x) = \frac{\norm{\x - \mvmean_k}^2}{2 \sigma^2} + \ln (p(C_k))$$
-where we have cancelled out term 2 and term 3 becomes the same for all classes. We can also expand
+where we have cancelled out term 2 and term 3 as they become the same for all classes. We can also expand
 $$a_k(\x) = -\frac{1}{2\sigma^2}(\x^T\x - 2 \mvmean_k)\x + \mvmean_k \mvmean) + \ln p(C_k)$$
 So we define a new $a$
 $$a_k(\x) = \w_k^T \x + \w_{k_0}$$

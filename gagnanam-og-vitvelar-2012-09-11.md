@@ -4,7 +4,7 @@
 
 # Linear Models For Classification
 
-True goal in in classification is take an input vector $\x$ and assign it to one or $K$ discreet classes $C_k$, $k=1, \dotsc, K$. The input space is divided into regions whose boundaries are called **decision surfaces**.
+True goal in in classification is take an input vector $\x$ and assign it to one or $K$ discrete classes $C_k$, $k=1, \dotsc, K$. The input space is divided into regions whose boundaries are called **decision surfaces**.
 
 ![](img/2012-09-11-1.jpg)
 
@@ -19,7 +19,7 @@ From decision theory we have three different ways of making a decision.
 
 1. Using a discriminant function.
 2. Solve inference problem by modeling $p(C_k| \x)$ directly.
-3. Solve inference problem by modeling $p(\x|C_l)$ and then applying Bayes theorem.
+3. Solve inference problem by modeling $p(\x|C_k)$ and then applying Bayes theorem.
 
 ![](img/2012-09-11-2.jpg)
 

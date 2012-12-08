@@ -23,28 +23,23 @@ It was shown how to determine the weights using the *perceptron criterion*.
 
 The perceptron can be depicted graphically by
 
-<!-- ![](img/2012-10-04-1.jpg) -->
+![](img/2012-10-04-1.jpg) \
 
-This can be referred to as a single layer perceptron.
+This can be referred to as a single layer perceptron. The question is how to construct the basis functions $\phi_m(\x)$ so that the parameters can also be adapted. One way is to use another perceptron, i.e.
 
-The question is how to construct the basis functions $\phi_m(\x)$ so that the parameters can also be adapted.
+![](img/2012-10-04-2.jpg) \
 
-One way is to use another perceptron, i.e.
+As a result we get a *multilayer perceptron*.
 
-<!-- ![](img/2012-10-04-2.jpg) -->
+![](img/2012-10-04-3.jpg) \
 
-As a result we ge a *multilayer perceptron*.
-
-<!-- ![](img/2012-10-04-3.jpg) -->
-
-For the back propagation algorithm to work, the activation functions $f$ need to be differentiable. Popular choices for $f$ are the sigmoid function  or $\tanh$.
-
-<!-- ![](img/2012-10-04-4.jpg) -->
+For the back propagation algorithm to work, the activation functions $f$ need to be differentiable. Popular choices for $f$ are the sigmoid function or $\tanh$.
+![](img/2012-10-04-4.jpg)
 
 Notations and definitions
 --------------------------------
 
-<!-- ![](img/2012-10-04-5.jpg) -->
+![](img/2012-10-04-5.jpg) \
 
 We have $M$ linear combinations of the input variables $x_1, x_2, \dotsc, x_D$:
 \begin{align*}
@@ -73,7 +68,7 @@ Finally this is transformed via the *output activation function*. Typically two 
 1. Regression $y_k = a_k$.
 2. Classificiation $y_k = \sigma(a_k)$ or $y_k = \tanh(a_k)$.
 
-<!-- ![](img/2012-10-04-6.jpg) -->
+![](img/2012-10-04-6.jpg)
 
 If we include the bias into the summation (like we did in Ch. 3) then the $k$-th output of a feed-forward neural network is given by
 $$y_k(\w, \w) = \sigma \left (\sum_{j=0}^{M} w_{kj}^{(2)} h \left (\sum_{i=0}^{D} w_{ji}^{(1)} x_i \right )   \right)$$

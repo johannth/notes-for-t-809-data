@@ -47,7 +47,7 @@ If we differentiate and set to $\0$ we get
 $$\w = S_W^{-1}(\vec{m}_2 - \vec{m}_1)$$
 
 
- # Linear models for classification
+# Linear models for classification
 
 ![](img/2012-09-26-2.jpg)
 
@@ -60,6 +60,7 @@ We get a decision boundary between $C_k$ and $C_j$ by $y_k(\x) = y_j(\x)$ which 
 $$(\w_k - \w_j)^T \x + (w_{k0} - w_{j0}) = 0$$
 
 One extra property: Decision regions of such a discriminants are always (see p 184):
+
 1. Singly connected
 2. Convex
 

@@ -5,7 +5,7 @@
 # Discriminant Functions
 
 Let's start with two classes, $K=2$. The simplest linear discriminant is
-$$y(\x) = \underbrace{\w^t}_{\text{weight vector}} \x + \underbrace{w_0}_{\text{threshold}}$$
+$$y(\x) = \underbrace{\w^T}_{\text{weight vector}} \x + \underbrace{w_0}_{\text{threshold}}$$
 
 An input vector $\x$ is assigned to class $C_1$ if $y(\x) > 0$, else to $C_2$.
 
@@ -23,7 +23,7 @@ $y(\x)$ gives a signed measure of the perpendicular distance $r$ of the point $\
 
 ![](img/2012-09-12-4.jpg)
 $$\x = \x_\perp + r \frac{\w}{\norm{\w}}$$
-which is equivilant to
+which is equivalent to
 $$\w^T\x = \w^T \x_\perp + \frac{r \w^T\w}{\norm{\w}}$$
 so that
 $$\underbrace{\w^T\x + w_0}_{y(\x)} = \w^T \x_\perp + \underbrace{\frac{r \w^T \w}{\norm{\w}}}_{r\norm{\w}} + w_0$$
@@ -34,6 +34,7 @@ $$r = \frac{y(\x)}{\norm{\w}}$$
 So instead of build a multiclass discriminant from binary classifiers, let's consider a $K$ class discriminant comprising of $k$ linear functions
 $$Y_k(\x) + \w_k^T \x + w_{k0}$$
 and then assign $\x$ to class $C_k$ if $Y_k(\x) \ge Y_j(\x)$ for all $j,k$.
+
 ![](img/2012-09-12-6.jpg)
 
 We get the decision boundary between $C_k$ and $C_j$ by solving

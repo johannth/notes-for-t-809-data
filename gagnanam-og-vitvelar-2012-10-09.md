@@ -17,22 +17,23 @@ Trivial extensions
 
 1. We can add layers
 
-![An example of a multilayer feed forward neural network with more layers.](img/2012-10-09-2.jpg)
+    ![An example of a multilayer feed forward neural network with more layers.](img/2012-10-09-2.jpg) \
 
-2. We can force some/many $w_{ji}$ and $w_{kj}$ to be zere - a sparse network.
+2. We can force some/many $w_{ji}$ and $w_{kj}$ to be zero - a sparse network.
 
-![An example of a sparse network.](img/2012-10-09-3.jpg)
+    ![An example of a sparse network.](img/2012-10-09-3.jpg) \
 
 3. We can skip layers.
 
-![An example of a neural network where some layers are skipped.](img/2012-10-09-4.jpg)
+    ![An example of a neural network where some layers are skipped.](img/2012-10-09-4.jpg) \
+
 
 Nontrivial extensions
 -------------------------------------
 
 1. Recurrent connections, a neural network which is not longer a feed forward neural network.
 
-![An example of a nontrivial neural network with recurrent connections.](img/2012-10-09-5.jpg)
+    ![An example of a nontrivial neural network with recurrent connections.](img/2012-10-09-5.jpg) \
 
 2. ... (there are more nontrivial extensions but they are nontrivial and we don't even look at them.)
 
@@ -42,11 +43,11 @@ We have a weight vector
 $$\w = \begin{bmatrix}
     w_1 \\ \vdots \\ w_C
 \end{bmatrix} = \begin{bmatrix}
-    w_{10} \\ w_{20} \\ \vdots \\ v_{M0} \\ \vdots
+    w_{10} \\ w_{20} \\ \vdots \\ w_{M0} \\ \vdots
 \end{bmatrix}$$
-We can one instance of our neural network as a point in a $C$-dimensional space.
+We can view one instance of our neural network as a point in a $C$-dimensional space.
 
-![An example of the symmetries in the weight space.](img/2012-10-09-6.jpg)
+![An example of the symmetries in the weight space.](img/2012-10-09-6.jpg) \
 
 
 1.5.4 Inference and Decision
